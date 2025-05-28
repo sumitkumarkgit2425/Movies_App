@@ -1,5 +1,5 @@
 Popular Moives screenshot
-https://drive.google.com/file/d/1dx0Jtksja_pfiqhyYkmFlBmIwlkxy4e4/view?usp=sharing
+![popular](https://github.com/user-attachments/assets/614a5482-6a1c-4a07-a15c-14a28eef7851)
 
 Upcoming Movies screenshot
-https://drive.google.com/open?id=16l-8gAR1HX-UUnTAVLO1B67jNiOzls7q&usp=drive_copy
+![WhatsApp Image 2025-05-28 at 10 36 01_23284c8c](https://github.com/user-attachments/assets/8f455b11-d2ee-4bc1-8686-0e379e2b5e16)
