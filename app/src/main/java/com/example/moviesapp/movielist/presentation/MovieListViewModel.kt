@@ -18,8 +18,8 @@ class MovieListViewModel @Inject constructor(
     private val movieListRepository: MovieListRepository
 ) : ViewModel() {
 
-    private var _movieListState = MutableStateFlow(MovieListState())
-    val movieListState = _movieListState.asStateFlow()
+    private var _movieListState = MutableStateFlow(MovieListState())  // used for real change in state
+    val movieListState = _movieListState.asStateFlow()  // used for observe state
 
     init {
         getPopularMovieList(false)

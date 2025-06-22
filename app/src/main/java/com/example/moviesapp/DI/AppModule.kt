@@ -20,12 +20,13 @@ object AppModule{
     private val interceptor: HttpLoggingInterceptor = HttpLoggingInterceptor()
         .apply{
         level = HttpLoggingInterceptor.Level.BODY
-
+    //helps in logging the request and response from the server
     }
 
     private val client: OkHttpClient = OkHttpClient.Builder()
         .addInterceptor(interceptor)
         .build()
+    //Core HTTP engine for Retrofit; handles all network tasks
 
     @Provides
     @Singleton
@@ -36,6 +37,7 @@ object AppModule{
             .client(client)
             .build()
             .create(MovieApi::class.java)
+       // Tells Hilt how to build the MovieApi interface.
     }
 
     @Provides
@@ -46,5 +48,8 @@ object AppModule{
             MovieDataBase::class.java,
             "moviedb.db"
         ).build()
+
+    //Provides a singleton Room database called "moviedb.db".
+    //Takes Application context to initialize it.
     }
 }
